@@ -1,20 +1,20 @@
 const { expectRevert, time } = require('@openzeppelin/test-helpers');
 const { assert } = require("chai");
-const PantherToken = artifacts.require('PantherToken');
+const GatorToken = artifacts.require('GatorToken');
 const MasterChef = artifacts.require('MasterChef');
 const MockBEP20 = artifacts.require('libs/MockBEP20');
-const PantherReferral = artifacts.require('PantherReferral');
+const GatorReferral = artifacts.require('GatorReferral');
 
 contract('MasterChef', ([alice, bob, carol, referrer, treasury, dev, fee, owner]) => {
     beforeEach(async () => {
         this.zeroAddress = '0x0000000000000000000000000000000000000000';
-        this.panther = await PantherToken.new({ from: owner });
-        this.referral = await PantherReferral.new({ from: owner });
-        this.chef = await MasterChef.new(this.panther.address, '100', '1000', { from: owner });
+        this.Gator = await GatorToken.new({ from: owner });
+        this.referral = await GatorReferral.new({ from: owner });
+        this.chef = await MasterChef.new(this.Gator.address, '100', '1000', { from: owner });
 
-        await this.panther.transferOwnership(this.chef.address, { from: owner });
+        await this.Gator.transferOwnership(this.chef.address, { from: owner });
         await this.referral.updateOperator(this.chef.address, true, { from: owner });
-        await this.chef.setPantherReferral(this.referral.address, { from: owner });
+        await this.chef.setGatorReferral(this.referral.address, { from: owner });
 
         this.lp1 = await MockBEP20.new('LPToken', 'LP1', '1000000', { from: owner });
         this.lp2 = await MockBEP20.new('LPToken', 'LP2', '1000000', { from: owner });
