@@ -25,8 +25,8 @@ contract GatorToken is BEP20 {
     mapping(address => bool) private _excludedFromAntiWhale;
     // Automatic swap and liquify enabled
     bool public swapAndLiquifyEnabled = false;
-    // Min amount to liquify. (default 200 Gators)
-    uint256 public minAmountToLiquify = 200 ether;
+    // Min amount to liquify. (default 500 Gators)
+    uint256 public minAmountToLiquify = 500 ether;
     // The swap router, modifiable. Will be changed to GatorSwap's router when our own AMM release
     IUniswapV2Router02 public GatorSwapRouter;
     // The trading pair

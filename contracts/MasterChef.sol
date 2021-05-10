@@ -78,7 +78,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
     // Gator referral contract address.
     IGatorReferral public GatorReferral;
     // Referral commission rate in basis points.
-    uint16 public referralCommissionRate = 100;
+    uint16 public referralCommissionRate = 500;
     // Max referral commission rate: 10%.
     uint16 public constant MAXIMUM_REFERRAL_COMMISSION_RATE = 1000;
 
