@@ -4,7 +4,7 @@ https://Gatorswap.com. Feel free to read the code. More details coming soon.
 
 ## Deployed Contracts
 
-- GatorToken: [0x1f546ad641b56b86fd9dceac473d1c7a357276b7](https://bscscan.com/address/0x1f546ad641b56b86fd9dceac473d1c7a357276b7)
-- MasterChef: [0x058451c62b96c594ad984370eda8b6fd7197bbd4](https://bscscan.com/address/0x058451c62b96c594ad984370eda8b6fd7197bbd4)
-- GatorReferral: [0xbb688307a13e5abbd99ee4d6229272a17d60fe34](https://bscscan.com/address/0xbb688307a13e5abbd99ee4d6229272a17d60fe34)
-- Timelock: [0xe6a8f0269d6af307a908ecd3938f470db7a56daa](https://bscscan.com/address/0xe6a8f0269d6af307a908ecd3938f470db7a56daa)
+- GatorToken: [0x88371dEC00BC3543231E01089c3Dc6D94289d4aF](https://bscscan.com/address/0x88371dEC00BC3543231E01089c3Dc6D94289d4aF)
+- MasterChef: [0x55Da3b152F48378A42D091be1eef2af37964BE45](https://bscscan.com/address/0x55Da3b152F48378A42D091be1eef2af37964BE45)
+- GatorReferral: [0x514B4c282293520Ccc547D09311848c4F9d0cC23](https://bscscan.com/address/0x514B4c282293520Ccc547D09311848c4F9d0cC23)
+- Timelock: [0x271a481ccbc5fa9eed12de98a39d3fa28d41ece0](https://bscscan.com/address/0x271a481ccbc5fa9eed12de98a39d3fa28d41ece0)
